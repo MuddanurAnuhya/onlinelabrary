@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color:#ffcc99;
+}
+</style>
+</head>
+<script>
+function checkpassword(form){
+password1=form.password1.value;//password
+password2=form.password2.value;//confirm password
+//If password not entered
+if(password1 =='')
+alert("please enter password);
+else if(password2=='')
+alert("\npassword did not match:please try again...")
+return false;}
+//If same return true.
+else{
+alert("password match:welcome")
+return true;}}
+</script></head>
+<body>
+<form>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" value=" "><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" value=" "><br><br>
+<label for="date">date of birth:</label>
+<input type="text" id="date" name="date" value="  "><br><br>
+<label for="email id">email id:</label>
+<input type="mail" id="email id" name="mail"><br><br>
+<label for="pwd1">Password:</label>
+<input type="passsword" id="pwd1" name="pwd1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+<label for="pwd2">conformpassword:</label>
+<input type="text" id="pwd2" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+<label for="gen">Gender:</label><br>
+<input type="radio" id="gen" name="gender">male<br>
+<input type="radio" id="gen" name="gender">female<br>
+<input type="radio" id="gen" name="gender">others<br>
+<label for="rpt">student feedback:</label><br><br>
+<textarea rows="7"cols="50"></textarea><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
